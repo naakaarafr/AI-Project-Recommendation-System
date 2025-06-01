@@ -171,7 +171,7 @@ This project is licensed under the **MIT License**. See the [LICENSE](LICENSE) f
 For questions or feedback, reach out:
 
 * **GitHub**: [naakaarafr](https://github.com/naakaarafr) 👤
-* **Email**: [your\_email@example.com](mailto:divvyanshkudesiaa1@gmail.com) 📧
+* **Email**: [divvyanshkudesiaa1@gmail.com](mailto:divvyanshkudesiaa1@gmail.com) 📧
 
 Feel free to open an issue or get in touch!
 
