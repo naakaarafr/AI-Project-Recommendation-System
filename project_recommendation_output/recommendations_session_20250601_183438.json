@@ -1,0 +1,203 @@
+{
+  "session_id": "session_20250601_183438",
+  "timestamp": "2025-06-01T18:36:16.122037",
+  "user_profile": {
+    "profile_id": "session_20250601_183438",
+    "created_at": "2025-06-01T18:36:13.047707",
+    "personal_info": {
+      "name": "naakaarafr",
+      "current_role": "student",
+      "experience_level": "beginner"
+    },
+    "technical_profile": {
+      "programming_languages": [
+        {
+          "language": "python",
+          "level": "beginner"
+        }
+      ],
+      "preferred_technologies": [
+        "NA"
+      ]
+    },
+    "interests_and_goals": {
+      "domains": [
+        "AI/ML"
+      ],
+      "career_goals": "full stack python developer",
+      "project_preferences": "learning projects"
+    },
+    "constraints": {
+      "time_commitment": "1-2 hours",
+      "budget_range": "free only"
+    }
+  },
+  "recommendations": [
+    {
+      "title": "AI-Powered Recipe Recommender",
+      "description": "Create a machine learning system that recommends recipes based on dietary preferences and available ingredients.",
+      "domain": "AI/ML",
+      "technologies": [
+        "Python",
+        "scikit-learn",
+        "pandas",
+        "Flask"
+      ],
+      "difficulty": "intermediate",
+      "estimated_time": "4-6 weeks",
+      "relevance_score": 1.0,
+      "learning_outcomes": [
+        "Hands-on experience with Python",
+        "Hands-on experience with scikit-learn",
+        "Hands-on experience with pandas",
+        "AI/ML project architecture",
+        "Project planning and execution"
+      ],
+      "portfolio_value": "High",
+      "rank": 1,
+      "overall_score": 10.0,
+      "feasibility_score": 8.5,
+      "impact_score": 8.0
+    },
+    {
+      "title": "Personal Finance Tracker",
+      "description": "Build a web application to track income, expenses, and savings goals with data visualization.",
+      "domain": "Web Development",
+      "technologies": [
+        "Python",
+        "Flask",
+        "SQLite",
+        "Chart.js"
+      ],
+      "difficulty": "intermediate",
+      "estimated_time": "3-4 weeks",
+      "relevance_score": 0.7,
+      "learning_outcomes": [
+        "Hands-on experience with Python",
+        "Hands-on experience with Flask",
+        "Hands-on experience with SQLite",
+        "Web Development project architecture",
+        "Project planning and execution"
+      ],
+      "portfolio_value": "Medium",
+      "rank": 2,
+      "overall_score": 7.0,
+      "feasibility_score": 8.5,
+      "impact_score": 8.0
+    },
+    {
+      "title": "Weather Dashboard with API Integration",
+      "description": "Build a responsive dashboard that displays weather data from multiple sources with interactive maps.",
+      "domain": "Web Development",
+      "technologies": [
+        "JavaScript",
+        "React",
+        "APIs",
+        "CSS"
+      ],
+      "difficulty": "beginner",
+      "estimated_time": "2-3 weeks",
+      "relevance_score": 0.5,
+      "learning_outcomes": [
+        "Hands-on experience with JavaScript",
+        "Hands-on experience with React",
+        "Hands-on experience with APIs",
+        "Web Development project architecture",
+        "Project planning and execution"
+      ],
+      "portfolio_value": "Medium",
+      "rank": 3,
+      "overall_score": 5.0,
+      "feasibility_score": 8.5,
+      "impact_score": 8.0
+    },
+    {
+      "title": "Task Management System",
+      "description": "Develop a full-stack application for managing projects and tasks with team collaboration features.",
+      "domain": "Full Stack",
+      "technologies": [
+        "Node.js",
+        "Express",
+        "MongoDB",
+        "React"
+      ],
+      "difficulty": "intermediate",
+      "estimated_time": "5-7 weeks",
+      "relevance_score": 0.5,
+      "learning_outcomes": [
+        "Hands-on experience with Node.js",
+        "Hands-on experience with Express",
+        "Hands-on experience with MongoDB",
+        "Full Stack project architecture",
+        "Project planning and execution"
+      ],
+      "portfolio_value": "Medium",
+      "rank": 4,
+      "overall_score": 5.0,
+      "feasibility_score": 8.5,
+      "impact_score": 8.0
+    }
+  ],
+  "conversation_history": [
+    {
+      "timestamp": "2025-06-01T18:34:49.609537",
+      "agent": "Ava (User Onboarder)",
+      "question": "What's your name? (or what would you like me to call you?)",
+      "user_response": "naakaarafr"
+    },
+    {
+      "timestamp": "2025-06-01T18:34:57.451196",
+      "agent": "Ava (User Onboarder)",
+      "question": "What's your current role or status? (e.g., student, software developer, career changer, etc.)",
+      "user_response": "student"
+    },
+    {
+      "timestamp": "2025-06-01T18:35:01.506433",
+      "agent": "Ava (User Onboarder)",
+      "question": "How would you describe your overall experience with programming/technology? (beginner, intermediate, advanced, expert)",
+      "user_response": "beginner"
+    },
+    {
+      "timestamp": "2025-06-01T18:35:13.626320",
+      "agent": "Ava (User Onboarder)",
+      "question": "Which programming languages do you know? Please list them with your comfort level (e.g., 'Python - intermediate, JavaScript - beginner')",
+      "user_response": "python-beginner"
+    },
+    {
+      "timestamp": "2025-06-01T18:35:19.018477",
+      "agent": "Ava (User Onboarder)",
+      "question": "What areas of technology interest you most? (e.g., AI/ML, Web Development, Mobile Apps, Data Science, Game Development, etc.)",
+      "user_response": "AI/ML"
+    },
+    {
+      "timestamp": "2025-06-01T18:35:34.992699",
+      "agent": "Ava (User Onboarder)",
+      "question": "What are your career goals? What do you hope to achieve in the next 6-12 months?",
+      "user_response": "full stack python developer"
+    },
+    {
+      "timestamp": "2025-06-01T18:35:42.897078",
+      "agent": "Ava (User Onboarder)",
+      "question": "How much time can you dedicate to a project per week? (e.g., 2-3 hours, 5-10 hours, 15+ hours)",
+      "user_response": "1-2 hours"
+    },
+    {
+      "timestamp": "2025-06-01T18:35:52.218818",
+      "agent": "Ava (User Onboarder)",
+      "question": "What type of projects appeal to you? (learning projects, portfolio pieces, potential business ideas, open source contributions, etc.)",
+      "user_response": "learning projects"
+    },
+    {
+      "timestamp": "2025-06-01T18:35:57.915778",
+      "agent": "Ava (User Onboarder)",
+      "question": "Are there any specific technologies or frameworks you're excited to learn?",
+      "user_response": "NA"
+    },
+    {
+      "timestamp": "2025-06-01T18:36:03.498475",
+      "agent": "Ava (User Onboarder)",
+      "question": "Do you have any budget constraints for tools, hosting, or resources? (free only, low budget, moderate budget, no constraints)",
+      "user_response": "free only"
+    }
+  ]
+}
