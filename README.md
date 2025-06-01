@@ -1,147 +1,169 @@
-AI Project Recommendation System 🌟
+# AI Project Recommendation System 🌟
 
-An interactive AI-powered system that recommends personalized project ideas based on users' skills, interests, and goals. This project leverages the CrewAI framework to orchestrate multiple AI agents, each specialized in a particular aspect of the recommendation process. 🚀
+An interactive AI-powered system that recommends personalized project ideas based on users' skills, interests, and goals. This project leverages the **CrewAI** framework to orchestrate multiple AI agents, each specialized in a particular aspect of the recommendation process. 🚀
 
-Table of Contents 📋
+---
 
-Introduction
-Features
-Architecture
-Installation
-Usage
-Project Structure
-Contributing
-License
-Contact
+## Table of Contents 📋
 
+- [Introduction](#introduction-ℹ️)
+- [Features](#features-✨)
+- [Architecture](#architecture-🏗️)
+- [Installation](#installation-🛠️)
+- [Usage](#usage-🚀)
+- [Project Structure](#project-structure-📂)
+- [Contributing](#contributing-🤝)
+- [License](#license-📜)
+- [Contact](#contact-📞)
 
-Introduction ℹ️
-The AI Project Recommendation System is designed to help users discover project ideas tailored to their unique profiles. By leveraging a team of AI agents, the system engages users in a natural conversation to gather information about their background, skills, interests, and constraints. It then analyzes this data, generates a list of suitable project ideas, ranks them based on relevance and feasibility, and presents the top recommendations in an actionable format. 🎯
-This system is ideal for students, professionals, and hobbyists looking to undertake meaningful projects that align with their goals and capabilities. Built with extensibility in mind, it uses the CrewAI framework to manage a collaborative team of AI agents powered by Google's Gemini API. 🌐
+---
 
-Features ✨
+## Introduction ℹ️
 
-Interactive Onboarding: Engages users in a friendly, conversational process to collect comprehensive profile information. 🤝
-Profile Analysis: Structures and validates user data into a detailed, machine-readable profile. 📊
-Project Idea Generation: Creates diverse project ideas based on user profiles and real-time industry trends. 💡
-Project Ranking: Prioritizes projects using a multi-dimensional scoring system (relevance, feasibility, impact). 🏆
-Presentation: Delivers personalized recommendations with detailed explanations and next steps. 🎯
-Extensibility: Supports integration of additional tools and agents to enhance functionality. 🛠️
-Logging and Saving: Saves session data, recommendations, and feedback to the project_recommendation_output directory. 💾
+The AI Project Recommendation System is designed to help users discover project ideas tailored to their unique profiles. By leveraging a team of AI agents, the system engages users in a natural conversation to gather information about their background, skills, interests, and constraints.
 
+It then analyzes this data, generates a list of suitable project ideas, ranks them based on relevance and feasibility, and presents the top recommendations in an actionable format. 🎯
 
-Architecture 🏗️
-The system is built using the CrewAI framework, which orchestrates a team of specialized AI agents working collaboratively. The architecture consists of the following agents:
+This system is ideal for **students, professionals, and hobbyists** looking to undertake meaningful projects aligned with their goals. Built with extensibility in mind, it uses the **CrewAI** framework to manage a collaborative team of AI agents powered by **Google's Gemini API**. 🌐
 
-User Onboarder: Collects user information through an interactive, natural conversation. 🗣️
-User Profile Analyst: Analyzes and structures user data into a validated profile. 🔍
-Project Generator: Generates diverse project ideas based on the user profile and industry trends. 🚀
-Project Ranker: Ranks projects using a three-axis scoring system (Relevance, Feasibility, Impact). 📈
-Presentation Specialist: Formats and presents the top recommendations in a compelling, actionable way. 📝
+---
 
-Each agent uses custom tools (e.g., GitHub trending search, profile validation) and operates sequentially, passing outputs to the next agent in the workflow. The system is powered by the Gemini API via the langchain-google-genai library and integrates with external services like Serper for enhanced functionality. ⚙️
+## Features ✨
 
-Installation 🛠️
-To set up the AI Project Recommendation System locally, follow these steps:
+- **Interactive Onboarding**: Conversationally gathers user profile info. 🤝  
+- **Profile Analysis**: Structures and validates data into a machine-readable profile. 📊  
+- **Project Idea Generation**: Generates ideas based on profile + real-time trends. 💡  
+- **Project Ranking**: Uses relevance, feasibility, and impact for scoring. 🏆  
+- **Presentation**: Clearly communicates recommendations with explanations. 🎯  
+- **Extensibility**: Easily integrate new tools/agents. 🛠️  
+- **Logging and Saving**: Stores data in `project_recommendation_output`. 💾  
 
-Clone the Repository: 📥
+---
+
+## Architecture 🏗️
+
+The system is built using the **CrewAI** framework, orchestrating specialized AI agents:
+
+- **User Onboarder**: Collects user input via natural conversation. 🗣️  
+- **User Profile Analyst**: Analyzes and validates the profile. 🔍  
+- **Project Generator**: Generates project ideas. 🚀  
+- **Project Ranker**: Ranks ideas by relevance, feasibility, and impact. 📈  
+- **Presentation Specialist**: Presents top ideas in an actionable format. 📝  
+
+Agents operate **sequentially**, passing data forward. Powered by **Gemini API** via `langchain-google-genai` and supports external services like **Serper** for enhanced search. ⚙️
+
+---
+
+## Installation 🛠️
+
+### 1. Clone the Repository 📥
+
 git clone https://github.com/naakaarafr/ai-project-recommendation-system.git
 cd ai-project-recommendation-system
+2. Install Dependencies 📦
+Ensure Python 3.8+ is installed, then:
 
-
-Install Dependencies: 📦Ensure you have Python 3.8 or higher installed. Then, install the required packages:
+bash
+Copy
+Edit
 pip install -r requirements.txt
+3. Set Up Environment Variables 🔑
+Create a .env file in the root:
 
-
-Set Up Environment Variables: 🔑Create a .env file in the project root and add the following API keys:
+ini
+Copy
+Edit
 GOOGLE_API_KEY=your_google_api_key
 SERPER_API_KEY=your_serper_api_key
+Replace with your actual API keys. These can be obtained from Google Cloud and Serper.dev respectively.
 
-
-Replace your_google_api_key with your Google API key for Gemini access.
-Replace your_serper_api_key with your Serper API key (optional, for enhanced search capabilities).
-Obtain these keys from their respective services if you don’t have them.
-
-
-Verify Configuration: ✅Run the following command to check if the configuration is set up correctly:
+4. Verify Configuration ✅
+bash
+Copy
+Edit
 python config.py
-
-This will display the status of your API keys.
-
-
+This will confirm that your API keys are properly set.
 
 Usage 🚀
-To start the interactive session, run the main script:
+Start an interactive session:
+
+bash
+Copy
+Edit
 python main.py
+Flow:
 
-The system will launch an interactive session with the following flow:
+Welcome message 👋
 
-Welcome Message: Displays an introduction and instructions. 👋
-Onboarding Phase: Asks questions about your background, skills, interests, and constraints. ❓
-Answer naturally or use commands:
-skip to skip a question. ⏭️
-back to revisit the previous question. ⏮️
-quit to exit the session. 🚪
+Onboarding questions ❓
 
+skip — Skip current question ⏭️
 
+back — Go to previous question ⏮️
 
+quit — Exit the session 🚪
 
-Profile Analysis: Processes your responses into a structured profile. 📋
-Project Generation: Creates a list of project ideas tailored to your profile. 💡
-Ranking and Presentation: Ranks the ideas and presents the top recommendations. 🏅
+Profile Analysis 📋
 
-All session data, including logs, recommendations, and feedback, are saved in the project_recommendation_output directory. 📂
-Alternatively, you can run the crew directly with a predefined input:
+Project Idea Generation 💡
+
+Ranking & Presentation 🏅
+
+Session data is saved in the project_recommendation_output/ folder. 📂
+
+Alternative: Run the crew directly with predefined input:
+
+bash
+Copy
+Edit
 python crew.py
-
-This starts an interactive session where you can provide initial input and refine recommendations as needed. 🔄
-
 Project Structure 📂
-The project is organized as follows:
+graphql
+Copy
+Edit
 ai-project-recommendation-system/
 ├── main.py                        # Entry point for the interactive system 🚀
-├── crew.py                        # Defines the CrewAI crew and workflow 🧠
-├── agents.py                      # Defines the AI agents and their roles 🤖
-├── tasks.py                       # Defines tasks for each agent 📝
-├── tools.py                       # Custom tools for agents (e.g., GitHub search, profile validation) 🛠️
-├── config.py                      # Handles configuration and API key management ⚙️
-├── requirements.txt               # Lists project dependencies 📋
-├── project_recommendation_output/ # Directory for output files (logs, recommendations, etc.) 💾
+├── crew.py                        # Defines the CrewAI workflow 🧠
+├── agents.py                      # AI agents and their roles 🤖
+├── tasks.py                       # Agent-specific tasks 📝
+├── tools.py                       # Custom tools (e.g., GitHub search) 🛠️
+├── config.py                      # Config & API key handling ⚙️
+├── requirements.txt               # Python dependencies 📋
+├── project_recommendation_output/ # Output directory 💾
 └── README.md                      # Project documentation 📘
-
-
-main.py: Launches the interactive system with a step-by-step workflow. 🚀
-crew.py: Manages the CrewAI setup and provides alternative execution modes. 🧠
-agents.py: Contains agent definitions with roles, goals, and backstories. 🤖
-tasks.py: Specifies detailed tasks for each agent in the workflow. 📝
-tools.py: Implements custom tools used by agents for data processing and generation. 🛠️
-config.py: Configures the environment and validates API keys. ⚙️
-
-
 Contributing 🤝
-Contributions are welcome! To contribute to the project, please follow these steps:
+Contributions are welcome! Here's how:
 
-Fork the repository. 🍴
-Create a new branch for your feature or bug fix: 🌿git checkout -b feature/your-feature-name
+Fork the repo 🍴
 
+Create a new branch 🌿
 
-Make your changes and commit them with descriptive messages. ✍️
-Push your changes to your fork: 📤git push origin feature/your-feature-name
+bash
+Copy
+Edit
+git checkout -b feature/your-feature-name
+Make changes, commit with clear messages ✍️
 
+Push to your fork 📤
 
-Submit a pull request to the main repository. 📬
+bash
+Copy
+Edit
+git push origin feature/your-feature-name
+Open a pull request 📬
 
-Please ensure your code adheres to the project's coding standards (e.g., PEP 8 for Python) and includes appropriate tests where applicable. ✅
+Follow PEP 8 and include tests where appropriate. ✅
 
 License 📜
-This project is licensed under the MIT License. See the LICENSE file for details. 📜
+This project is licensed under the MIT License. See the LICENSE file for details.
 
 Contact 📞
-For questions, suggestions, or issues, please contact the project maintainer:
+For questions or feedback, reach out:
 
 GitHub: naakaarafr 👤
-Email: your_email@example.com 📧
 
-Feel free to open an issue on GitHub or reach out directly with feedback or inquiries! 💬
+Email: divvyanshkudesiaa1@gmail.com 📧
+
+Feel free to open an issue or get in touch!
 
 Happy coding, and enjoy discovering your next project with the AI Project Recommendation System! 🎉✨
