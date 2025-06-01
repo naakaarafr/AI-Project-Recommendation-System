@@ -175,11 +175,3 @@ For questions or feedback, reach out:
 
 Feel free to open an issue or get in touch!
 
----
-
-**Happy coding, and enjoy discovering your next project with the AI Project Recommendation System! 🎉✨**
-
-```
-
-Let me know if you want this turned into a downloadable file or published to a repository automatically.
-```
